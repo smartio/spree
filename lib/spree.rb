@@ -8,7 +8,7 @@ unless defined? Spree::Version
   module Spree
     module Version
       Major = '0'
-      Minor = '10'
+      Minor = '30'
       Tiny  = '99'  
       Pre   = nil # 'beta'
 
