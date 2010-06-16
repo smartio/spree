@@ -2,7 +2,7 @@
           "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <% hook :admin_inside_head do %>
+  <%= hook :admin_inside_head do %>
   	<%= render :partial => "shared/admin_head" %>
 	<% end %>
 </head>
@@ -28,7 +28,7 @@
 <div class='tile_bg_img'>
     <div id="admin-menu">
       <ul>
-        <% hook :admin_tabs do %>
+        <%= hook :admin_tabs do %>
           <%= render 'admin/shared/tabs' %>
         <% end %>
       </ul>
@@ -71,7 +71,7 @@
 </div>
 <![endif]-->
 
-<% hook :admin_footer_scripts do -%>
+<%= hook :admin_footer_scripts do -%>
   <%= javascript_include_tag 'admin/unobtrusive_handlers' %>
 <% end -%>
 </body>
