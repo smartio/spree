@@ -50,8 +50,3 @@ Spree::Preferences::MailSettings.init
 class String #:nodoc:
   include Spree::Support::CoreExtensions::String
 end
-
-require 'spree/theme_support'
-require 'state_machine'
-require 'stringex'
-require 'will_paginate'
