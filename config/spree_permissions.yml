@@ -66,3 +66,10 @@
     roles : [admin]
     options :
       unless : can_access?  #checkouts_controller may grant access based on presence of token, etc.      
+      
+'Admin::BaseController':
+  permission1:
+    roles : [admin]
+    options :
+      unless : "current_user.is_a?(User) and current_user.has_role?('admin_' + current_site.name)"
+      
